@@ -1,10 +1,4 @@
-
-
-
-
-
-
-The IPL (Indian Premier League) Winning Prediction System is a web application designed to predict the probability of winning for two cricket teams competing in an IPL match based on various match-related factors. IPL is one of the most popular professional Twenty20 cricket leagues globally, attracting top cricketing talent from around the world.
+The IPL Winning Prediction System utilizes logistic regression algorithm implemented with NumPy and Pandas to predict the outcome of IPL matches. It reads match-related data from a dataset using Pandas, preprocesses the data, selects relevant features, and trains a logistic regression model. This model is then used to predict the probability of winning for each team based on input parameters such as batting team, bowling team, city, target runs, current score, overs, and wickets. The system provides users with accurate predictions, aiding cricket enthusiasts in making informed decisions and analyzing match outcomes effectively.
 
 Here's a brief description of the system's functionality:
 
@@ -20,7 +14,7 @@ Here's a brief description of the system's functionality:
 
 6. **Deployment**: The system is deployed as a web application using Streamlit, making it accessible to users through a web browser. It utilizes machine learning models trained on historical IPL match data to make predictions.
 
-The IPL Winning Prediction System is built using the following tools and technologies:
+Tools and technologies Used :
 
 1. **Python**: Python is the primary programming language used for building the prediction model, data manipulation, and web application development.
 

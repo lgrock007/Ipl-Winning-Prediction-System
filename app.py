@@ -25,10 +25,10 @@ st.title('IPL Winning Prediction System')
 batting_team = st.selectbox('Select the batting team', teams)
 bowling_team = st.selectbox('Select the bowling team', teams)
 selected_city = st.selectbox('Select Host City Ground', cities)
-target = st.number_input('Target Run')
-score = st.number_input('Current Score')
-overs = st.number_input('Completed Overs')
-wickets = st.number_input('Wickets Gone')
+target = st.number_input('Target Run',min_value=0)
+score = st.number_input('Current Score',min_value=0)
+overs = st.number_input('Completed Overs',min_value=0,max_value=20)
+wickets = st.number_input('Wickets Gone',min_value=0,max_value=9)
 
 if st.button('Predict Probability'):
     runs_left = target - score
